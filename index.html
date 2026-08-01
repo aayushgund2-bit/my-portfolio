@@ -4,92 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aayush Gund | Official Portfolio</title>
-    <meta name="google-site-verification" content="zhjGHYb0U6bEm6o4CgAMYaDlxu9TZvdPmkHgjSoBgeY" />
+    <meta name="google-site-verification" content="l9ftGX7gCZTDVrMnhDBcAuFRycNzOeYZUx3j8QW0eNQ" />
     <style>
-        body { 
-            background-color: #050505; 
-            color: #fff; 
-            font-family: 'Poppins', sans-serif; 
-            margin: 0; 
-            padding: 0;
-        }
-        .bg-glow { 
-            position: fixed; 
-            top: 0; 
-            width: 100%; 
-            height: 100%; 
-            background: radial-gradient(circle at 50% 20%, rgba(0, 255, 204, 0.15), transparent 70%);
-            z-index: -1;
-        }
-        .hero { 
-            min-height: 80vh; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            text-align: center; 
-            padding: 20px; 
-        }
-        h1 { 
-            font-size: 3.5rem; 
-            margin: 0; 
-            background: linear-gradient(90deg, #fff, #00ffcc); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-        }
-        .sub { 
-            font-size: 1.1rem; 
-            color: #888; 
-            margin-top: 10px; 
-        }
+        body { background-color: #050505; color: #fff; font-family: 'Poppins', sans-serif; margin: 0; overflow-x: hidden; }
+        .bg-glow { position: fixed; top: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, #111 0%, #000 100%); z-index: -1; }
+        .hero { min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px 20px; }
+        h1 { font-size: 3.5rem; margin: 0; background: linear-gradient(90deg, #00ffcc, #3399ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .sub { font-size: 1.1rem; color: #888; letter-spacing: 2px; text-transform: uppercase; }
+        .stats { display: flex; gap: 15px; margin: 25px 0; flex-wrap: wrap; justify-content: center; }
+        .stat-card { background: rgba(255,255,255,0.03); padding: 15px; border-radius: 15px; border: 1px solid #222; min-width: 100px; text-decoration: none; color: white; transition: 0.3s; }
+        .stat-card:hover { border-color: #00ffcc; transform: translateY(-3px); }
+        .btn-group { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
+        .btn-launch { padding: 18px 35px; background: #00ffcc; color: #000; text-decoration: none; font-weight: bold; border-radius: 50px; box-shadow: 0 0 20px rgba(0,255,204,0.3); transition: 0.3s; }
+        .btn-launch:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(0,255,204,0.6); }
+        .btn-game { padding: 18px 35px; background: #ff0055; color: #fff; text-decoration: none; font-weight: bold; border-radius: 50px; box-shadow: 0 0 20px rgba(255,0,85,0.3); transition: 0.3s; }
+        .btn-game:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(255,0,85,0.6); }
+        .about-section { max-width: 800px; margin: 40px auto; padding: 30px 20px; background: rgba(255,255,255,0.05); border-radius: 20px; border: 1px solid #333; text-align: center; }
+        .skill-tag { display: inline-block; background: #111; padding: 8px 15px; border-radius: 50px; border: 1px solid #00ffcc; margin: 5px; font-size: 0.85rem; }
+        .gallery { padding: 40px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1200px; margin: auto; }
+        .screenshot { width: 100%; border-radius: 15px; border: 1px solid #333; }
         
-        /* Dynamic Rotating Text Styling */
+        /* Dynamic Typewriter Box */
         .typewriter-box {
             color: #00ffcc;
             font-weight: bold;
-            font-size: 1.3rem;
-            margin: 15px 0;
-            min-height: 30px;
+            font-size: 1.2rem;
+            margin: 10px 0;
+            min-height: 28px;
             display: inline-block;
-            border-bottom: 2px solid #00ffcc;
-            padding-bottom: 2px;
         }
         .cursor {
             display: inline-block;
-            width: 3px;
+            width: 2px;
             background-color: #00ffcc;
-            margin-left: 3px;
+            margin-left: 2px;
             animation: blink 0.7s infinite;
         }
         @keyframes blink {
             0%, 100% { opacity: 1; }
             50% { opacity: 0; }
         }
-
-        .stats { display: flex; gap: 15px; margin-top: 25px; flex-wrap: wrap; justify-content: center; }
-        .stat-card { background: rgba(255, 255, 255, 0.05); padding: 15px 25px; border-radius: 12px; border: 1px solid rgba(0, 255, 204, 0.2); }
-        .btn-launch { padding: 18px 35px; background: #00ffcc; color: #000; text-decoration: none; font-weight: bold; border-radius: 50px; box-shadow: 0 0 20px rgba(0, 255, 204, 0.4); margin-top: 25px; display: inline-block; transition: 0.3s; }
-        .btn-launch:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(0, 255, 204, 0.7); }
-        .about-section { max-width: 800px; margin: 40px auto; padding: 20px; }
-        .skill-tag { display: inline-block; background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; margin: 4px; border: 1px solid #333; }
-        .gallery { padding: 40px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
-        .screenshot { width: 100%; border-radius: 10px; border: 1px solid #222; }
     </style>
 </head>
 <body>
-
     <div class="bg-glow"></div>
-
+    
     <div class="hero">
-        <p class="sub">Independent Developer & Tech Creator</p>
+        <p class="sub">Independent Developer</p>
         <h1>Aayush Gund</h1>
+        <p style="color:#00ffcc; font-weight:bold; margin-bottom: 5px;">FROM INDIA 🇮🇳</p>
         
         <div class="typewriter-box">
             <span id="typewriter"></span><span class="cursor">&nbsp;</span>
         </div>
 
-        <a href="https://aayushgund2-bit.github.io/10th-reality-check/" class="btn-launch">TRY 10TH REALITY CHECK 💀</a>
+        <div class="stats">
+            <div class="stat-card"><h3 style="margin:0;">23K+</h3><p style="margin:0; font-size:0.7rem;">YouTube Views</p></div>
+            <div class="stat-card"><h3 style="margin:0;">TOP</h3><p style="margin:0; font-size:0.7rem;">AI Project</p></div>
+            <a href="https://aayushgund2-bit.github.io/10th-reality-check/" class="stat-card">
+                <h3 style="margin:0; color:#00ffcc;">10TH</h3>
+                <p style="margin:0; font-size:0.7rem;">Reality Check 💀</p>
+            </a>
+        </div>
+
+        <div class="btn-group">
+            <a href="https://aayush-ai-universe.lovable.app" class="btn-launch" target="_blank">LAUNCH AI UNIVERSE 🚀</a>
+            <a href="https://aayushgund2-bit.github.io/10th-reality-check/" class="btn-game" target="_blank">10TH REALITY CHECK 💀</a>
+        </div>
     </div>
+
+    <div class="about-section">
+        <h2 style="color: #00ffcc; margin-top: 0;">About the Developer</h2>
+        <p style="color: #ccc; line-height: 1.6;">
+            Aayush Gund is an independent developer from Pune, Maharashtra. 
+            Focused on building innovative AI solutions and student-centric digital experiences.
+        </p>
+        <div style="margin-top: 20px;">
+            <span class="skill-tag">No-Code AI Tools</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Ethical Awareness</span>
+            <span class="skill-tag">Digital Strategy</span>
+        </div>
+    </div>
+
+    <h2 style="text-align:center; font-size:1.8rem; margin-top:40px;">Ecosystem Showcase</h2>
+    <div class="gallery">
+        <img src="Screenshot_20260303_143419.jpg" class="screenshot">
+        <img src="Screenshot_20260303_143424.jpg" class="screenshot">
+        <img src="Screenshot_20260303_143429.jpg" class="screenshot">
+        <img src="Screenshot_20260303_143435.jpg" class="screenshot">
+        <img src="Screenshot_20260303_143459.jpg" class="screenshot">
+        <img src="Screenshot_20260303_143613.jpg" class="screenshot">
+        <img src="Screenshot_20260303_143657.jpg" class="screenshot">
+    </div>
+
+    <footer style="text-align:center; padding: 40px; color: #444;">
+        <p>Aayush Gund | Tech Innovator</p>
+    </footer>
 
     <script>
         const words = [
@@ -118,12 +129,12 @@
             let typeSpeed = isDeleting ? 40 : 80;
 
             if (!isDeleting && charIndex === currentWord.length) {
-                typeSpeed = 1800; // Pause at full word
+                typeSpeed = 1800;
                 isDeleting = true;
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
                 wordIndex = (wordIndex + 1) % words.length;
-                typeSpeed = 400; // Pause before typing next word
+                typeSpeed = 400;
             }
 
             setTimeout(typeEffect, typeSpeed);
@@ -133,6 +144,6 @@
             setTimeout(typeEffect, 500);
         });
     </script>
-
 </body>
-</html>
+                </html>
+                                                                                                                          
