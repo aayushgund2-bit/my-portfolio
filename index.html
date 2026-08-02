@@ -21,7 +21,8 @@
       "url": "https://aayushgund2-bit.github.io/my-portfolio/",
       "sameAs": [
         "https://aayush-ai-universe.lovable.app",
-        "https://aayushgund2-bit.github.io/10th-reality-check/"
+        "https://aayushgund2-bit.github.io/10th-reality-check/",
+        "https://naamkakamaal.lovable.app"
       ],
       "knowsAbout": ["AI Tools", "Web Development", "No-Code Development", "Prompt Engineering"]
     }
@@ -33,14 +34,22 @@
         .hero { min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px 20px; }
         h1 { font-size: 3.5rem; margin: 0; background: linear-gradient(90deg, #00ffcc, #3399ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .sub { font-size: 1.1rem; color: #888; letter-spacing: 2px; text-transform: uppercase; }
+        
         .stats { display: flex; gap: 15px; margin: 25px 0; flex-wrap: wrap; justify-content: center; }
         .stat-card { background: rgba(255,255,255,0.03); padding: 15px; border-radius: 15px; border: 1px solid #222; min-width: 100px; text-decoration: none; color: white; transition: 0.3s; }
         .stat-card:hover { border-color: #00ffcc; transform: translateY(-3px); }
-        .btn-group { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
-        .btn-launch { padding: 18px 35px; background: #00ffcc; color: #000; text-decoration: none; font-weight: bold; border-radius: 50px; box-shadow: 0 0 20px rgba(0,255,204,0.3); transition: 0.3s; }
+        
+        .btn-group { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 20px; max-width: 800px; }
+        
+        .btn-launch { padding: 16px 28px; background: #00ffcc; color: #000; text-decoration: none; font-weight: bold; border-radius: 50px; box-shadow: 0 0 20px rgba(0,255,204,0.3); transition: 0.3s; font-size: 0.95rem; }
         .btn-launch:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(0,255,204,0.6); }
-        .btn-game { padding: 18px 35px; background: #ff0055; color: #fff; text-decoration: none; font-weight: bold; border-radius: 50px; box-shadow: 0 0 20px rgba(255,0,85,0.3); transition: 0.3s; }
+        
+        .btn-game { padding: 16px 28px; background: #ff0055; color: #fff; text-decoration: none; font-weight: bold; border-radius: 50px; box-shadow: 0 0 20px rgba(255,0,85,0.3); transition: 0.3s; font-size: 0.95rem; }
         .btn-game:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(255,0,85,0.6); }
+        
+        .btn-fun { padding: 16px 28px; background: #ffaa00; color: #000; text-decoration: none; font-weight: bold; border-radius: 50px; box-shadow: 0 0 20px rgba(255,170,0,0.3); transition: 0.3s; font-size: 0.95rem; }
+        .btn-fun:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(255,170,0,0.6); }
+
         .about-section { max-width: 800px; margin: 40px auto; padding: 30px 20px; background: rgba(255,255,255,0.05); border-radius: 20px; border: 1px solid #333; text-align: center; }
         .skill-tag { display: inline-block; background: #111; padding: 8px 15px; border-radius: 50px; border: 1px solid #00ffcc; margin: 5px; font-size: 0.85rem; }
         .gallery { padding: 40px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1200px; margin: auto; }
@@ -81,8 +90,11 @@
 
         <div class="stats">
             <div class="stat-card"><h3 style="margin:0;">23K+</h3><p style="margin:0; font-size:0.7rem;">YouTube Views</p></div>
-            <div class="stat-card"><h3 style="margin:0;">TOP</h3><p style="margin:0; font-size:0.7rem;">AI Project</p></div>
-            <a href="https://aayushgund2-bit.github.io/10th-reality-check/" class="stat-card">
+            <a href="https://naamkakamaal.lovable.app" target="_blank" class="stat-card">
+                <h3 style="margin:0; color:#ffaa00;">FUNNY</h3>
+                <p style="margin:0; font-size:0.7rem;">Naam Ka Kamaal 🤣</p>
+            </a>
+            <a href="https://aayushgund2-bit.github.io/10th-reality-check/" target="_blank" class="stat-card">
                 <h3 style="margin:0; color:#00ffcc;">10TH</h3>
                 <p style="margin:0; font-size:0.7rem;">Reality Check 💀</p>
             </a>
@@ -90,6 +102,7 @@
 
         <div class="btn-group">
             <a href="https://aayush-ai-universe.lovable.app" class="btn-launch" target="_blank">LAUNCH AI UNIVERSE 🚀</a>
+            <a href="https://naamkakamaal.lovable.app" class="btn-fun" target="_blank">NAAM KA KAMAAL 🤣</a>
             <a href="https://aayushgund2-bit.github.io/10th-reality-check/" class="btn-game" target="_blank">10TH REALITY CHECK 💀</a>
         </div>
     </div>
@@ -98,7 +111,7 @@
         <h2 style="color: #00ffcc; margin-top: 0;">About the Developer</h2>
         <p style="color: #ccc; line-height: 1.6;">
             Aayush Gund is an independent developer from Pune, Maharashtra. 
-            Focused on building innovative AI solutions and student-centric digital experiences.
+            Focused on building innovative AI solutions, student-centric digital experiences, and viral web tools.
         </p>
         <div style="margin-top: 20px;">
             <span class="skill-tag">No-Code AI Tools</span>
@@ -127,8 +140,8 @@
         const words = [
             "Student & Web Builder ⚡",
             "AI Explorer 🤖",
-            "10th Passed 💀",
-            "Full-Stack Learner 💻"
+            "Creator of Naam Ka Kamaal 🤣",
+            "10th Passed 💀"
         ];
         
         let wordIndex = 0;
@@ -167,3 +180,4 @@
     </script>
 </body>
 </html>
+
